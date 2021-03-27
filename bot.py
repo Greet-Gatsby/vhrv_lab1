@@ -16,23 +16,23 @@ TOKEN = '1716011200:AAF8R3Uv1bhjHBeykHdbpsdKVVz7XsYvfto'
 
 def start(update, context):
 """Send a message when the command /start is issued."""
-update.message.reply_text('Hi!')
+    update.message.reply_text('Hi!')
 
 def help(update, context):
 """Send a message when the command /help is issued."""
-update.message.reply_text('Help!')
+    update.message.reply_text('Help!')
 
 def echo(update, context):
 """Echo the user message."""
-update.message.reply_text(update.message.text)
+    update.message.reply_text(update.message.text)
 
 def error(update, context):
 """Log Errors caused by Updates."""
-logger.warning('Update "%s" caused error "%s"', update, context.error)
+    logger.warning('Update "%s" caused error "%s"', update, context.error)
 
 def echo(update, context):
-"""Echo the user message."""
-update.message.reply_text(update.message.text)
+    """Echo the user message."""
+    update.message.reply_text(update.message.text)
 
 def main():
 
